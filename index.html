@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light only">
+<meta name="darkreader-lock">
 <title>학생, 안경 좀 벗어볼까요?</title>
 <meta name="description" content="2027 수능 AI 안경·카메라 단추 부정행위를 풍자하는 감독관 시뮬레이터. 장비 없이 눈과 OMR 카드만으로 부정행위자를 가려내세요.">
 <meta name="theme-color" content="#23382c">
@@ -11,7 +14,10 @@
 <meta property="og:description" content="2027 수능 감독관 시뮬레이터 · 도전 코드로 친구와 같은 시험실에서 대결">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2323382c'/%3E%3Cg fill='none' stroke='%23f1efe4' stroke-width='4'%3E%3Crect x='8' y='24' width='20' height='15' rx='5'/%3E%3Crect x='36' y='24' width='20' height='15' rx='5'/%3E%3Cpath d='M28 30q4-3 8 0'/%3E%3C/g%3E%3Ccircle cx='53' cy='22' r='4' fill='%23ff3b3b'/%3E%3C/svg%3E">
 <style>
-:root{--board:#23382c;--chalk:#f1efe4;--paper:#fffaf0;--red:#c8322b}
+:root{--board:#23382c;--chalk:#f1efe4;--paper:#fffaf0;--red:#c8322b;color-scheme:only light}
+/* 브라우저 자동 다크모드(색 반전) 방지: 이 게임은 원래 색 그대로 보여야 안경·피부·단추가 구분됩니다 */
+@media (prefers-color-scheme:dark){:root{color-scheme:only light}html,body{background:#1d1d1d}}
+svg,canvas,img{forced-color-adjust:none}
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
 body{background:#1d1d1d;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;color:#2a2620;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;touch-action:manipulation}
